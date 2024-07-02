@@ -1,0 +1,87 @@
+.toggleCheckbox {
+  display: none;
+}
+
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  border: 3px solid #e4e4ee;
+  border-radius: 10px;
+  background: #e4e4ee;
+  font-weight: bold;
+  color: map-get($colors, 'electric');
+  cursor: pointer;
+}
+.toggleContainer::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  border-radius:20px;
+  background: map-get($colors, 'white');
+  transition: all 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer::before {
+  left: 50%;
+}
+.toggleContainer div {
+  padding: 6px;
+  text-align: center;
+  z-index: 1;
+}
+.toggleCheckbox {
+  display: none;
+}
+.toggleCheckbox:checked + .toggleContainer div:first-child{
+  color: map-get($colors, 'electric');
+  transition: color 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer div:last-child{
+  color: map-get($colors, 'electric');
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:first-child{
+  color: map-get($colors, 'electric');
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:last-child{
+  color: map-get($colors, 'electric');
+  transition: color 0.3s;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-align: center;
+  padding: 18px 30px;
+  outline: none;
+  border-radius: 12px;
+  color: map-get($colors, 'white');
+  background-color: map-get($colors, 'blue');
+  cursor: pointer;
+  font-weight: 700;
+  font-size: map-get($font-sizes, 'sm');
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+}
+
+.btn-primary:hover{
+  transition: 0.3s;
+  box-shadow: 0 0 20px 0 map-get($colors, 'blue');
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
