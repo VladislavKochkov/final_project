@@ -521,69 +521,102 @@ body {
   }
 }
 
-.publications {
-  padding: 30px;
-  background-color: #F5F5FA;
+.about {
+  display: flex;
+  flex-wrap: wrap;
 }
-.publications .card {
-  height: 450px;
-  border-radius: 8px;
-  border: none;
-  overflow: hidden;
-  transition: 0.3s box-shadow;
-  cursor: pointer;
-  margin-bottom: 30px;
+.about__text {
+  font-size: 19px;
+  color: #000;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  width: 662px;
+  height: 260px;
+  margin: 0;
 }
-.publications .card:hover {
-  box-shadow: 0 0 9px -4px black;
-}
-.publications .card-body {
-  padding: 30px;
-}
-.publications__img-wrapper {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  min-height: 200px;
-}
-.publications__title, .publications__date {
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.publications__title {
+.about__description {
   font-size: 16px;
+  font-weight: 400;
   line-height: 19px;
-  color: #24A3FF;
-  margin-bottom: 15px;
+  text-align: left;
+  color: #000;
+  margin-bottom: 40px;
 }
-.publications__title:hover {
-  color: #F0145A;
+.about .center {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 60px;
 }
-.publications__date {
-  font-size: 12px;
-  color: #B3B3BA;
-  text-transform: uppercase;
-}
-.publications hr {
-  border-width: 4px;
-  margin: 15px 0;
-  border-color: #E6E6F0;
+.about .vertical-line {
+  width: 4px;
+  height: 322px;
+  background-color: #E6E6F0;
   opacity: 1;
 }
-.publications__text {
-  color: #000;
+.about .left, .about .right {
+  width: 45%;
+}
+.about .left {
+  width: 662px;
+  height: 380px;
+  float: left;
+}
+.about .right {
+  width: 375px;
+  height: 322px;
+  float: right;
+}
+.about .icon {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 101px;
+  height: 44px;
+  gap: 8px;
+}
+.about .team-banner {
+  position: relative;
+  max-width: 1920px;
+  z-index: 1;
+  margin-bottom: 60px;
+}
+
+.company {
+  background-color: #F5F5FA;
+  padding: 30px 160px;
+  height: 263px;
+}
+.company .section-header__title-electric {
   font-size: 14px;
-  line-height: 22px;
-}
-.publications .segment-text {
-  color: #323264;
   font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  line-height: 16px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  color: #323264;
 }
-.publications .segment-text .segment-text:hover {
-  text-align: center;
+.company .img-area {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 320px;
+  height: 110px;
+  padding: 25px;
+  gap: 40px;
+  border-radius: 12px;
+}
+.company .carousel-indicators {
+  margin: 0;
+  bottom: -45px;
+}
+.company .carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(36, 163, 255, 0.5);
+  border-radius: 50%;
+}
+.company .carousel-indicators [data-bs-target] .active {
+  background-color: #24A3FF;
 }
 
 .footer {
@@ -624,4 +657,8 @@ body {
   color: #323264;
 }
 
-/*# sourceMappingURL=publications.css.map */
+.section-header__title {
+  margin-bottom: 28px;
+}
+
+/*# sourceMappingURL=about.css.map */

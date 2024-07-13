@@ -1,0 +1,10 @@
+@import "./common";
+
+@import "./components/section-header";
+@import "./components/header";
+@import "./components/about";
+@import "./components/footer";
+
+.section-header__title {
+  margin-bottom: 28px;
+}

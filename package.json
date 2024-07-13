@@ -7,7 +7,7 @@
     "compile-home": "sass --watch ./src/styles/scss/home.scss:./src/styles/css/home.css",
     "compile-publications": "sass --watch ./src/styles/scss/publications.scss:./src/styles/css/publications.css",
     "compile-services": "sass --watch ./src/styles/scss/services.scss:./src/styles/css/services.css",
-    "compile-contact": "sass --watch ./src/styles/scss/contact.scss:./src/styles/css/contact.css",
+    "compile-about": "sass --watch ./src/styles/scss/about.scss:./src/styles/css/about.css",
     "compile-team": "sass --watch ./src/styles/scss/team.scss:./src/styles/css/team.css"
   },
   "author": "",
